@@ -172,7 +172,7 @@ module PaypalClient
 
     def authenticate
       basic_auth = ["#{@client_id}:#{@client_secret}"].pack('m').delete("\r\n")
-      endpoint = [@version, 'oauth2', 'token'].join('/')
+      endpoint = ['v1', 'oauth2', 'token'].join('/')
 
       response = connection.post(endpoint,
                                  'grant_type=client_credentials',
