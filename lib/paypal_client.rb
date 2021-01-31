@@ -15,8 +15,8 @@ module PaypalClient
   require 'faraday_middleware'
 
   class Client
-    LIVE_URL = 'https://api.paypal.com'.freeze
-    SANDBOX_URL = 'https://api.sandbox.paypal.com'.freeze
+    LIVE_URL = 'https://api-m.paypal.com'.freeze
+    SANDBOX_URL = 'https://api-m.sandbox.paypal.com'.freeze
     VERSION = 'v1'.freeze
 
     TOKEN_CACHE_KEY = 'paypal_oauth_token'.freeze
